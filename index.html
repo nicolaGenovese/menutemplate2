@@ -1,0 +1,332 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!-- Javascript -->
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+		<!-- <script src="./js/filter.js"></script> -->
+	<!-- CSS -->
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
+
+</head>
+<body>
+	<header class="cd-header">
+		<h1>Content Filters</h1>
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".starters"><a href="#0" data-type="starters">Starters</a></li>
+					<li class="filter" data-filter=".mains"><a href="#0" data-type="mains">Mains</a></li>
+                    <li class="filter" data-filter=".sides"><a href="#0" data-type="sides">Sides</a></li>
+					<li class="filter" data-filter=".salads"><a href="#0" data-type="salads">Salads</a></li>
+					<li class="filter" data-filter=".desserts"><a href="#0" data-type="desserts">Desserts</a></li>
+					<li class="filter" data-filter=".drinks"><a href="#0" data-type="drinks">Drinks</a></li>
+					<button id="ChangeToGrid"><span class="active">&boxplus;</span></button>
+					<button id="ChangeToList"><span class="inactive">&boxminus;</span></button>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+
+		<section class="cd-gallery">
+			<ul>
+				<div id="mixContainer" class="mixItems">
+					<div class="mix starters  gluten crustaceans eggs  lupin milk molluscs mustard nuts peanuts sesame-seeds soya  vegetarian dinner" data-myorder="2016" data-date="20160115">
+					<img src="./img/starter1.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix starters celery  crustaceans eggs fish lupin  molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegetarian dinner" data-myorder="2016" data-date="20160115">
+						<img src="./img/starter2.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+
+					<div class="mix starters celery  eggs fish lupin milk  mustard nuts peanuts sesame-seeds sulphur-dioxide vegetarian dinner" data-myorder="2016" data-date="20160115">
+						<img src="./img/starter3.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix starters celery gluten crustaceans eggs fish lupin molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegetarian sunday" data-myorder="2016" data-date="20160115">
+						<img src="./img/starter4.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix starters celery gluten crustaceans  fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan lunch" data-myorder="2016" data-date="20160115">
+						<img src="./img/starter5.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix mains celery gluten crustaceans eggs fish lupin milk molluscs mustard peanuts sesame-seeds soya sulphur-dioxide vegan dinner" data-myorder="2016" data-date="20160115">
+						<img src="./img/main1.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix mains  gluten crustaceans eggs fish lupin milk molluscs mustard nuts soya sulphur-dioxide vegetarian breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/main2.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix mains celery gluten crustaceans eggs fish lupin milk mustard nuts peanuts sesame-seeds soya  vegetarian breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/main3.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix mains celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan sunday" data-myorder="2016" data-date="20160115">
+						<img src="./img/main4.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix mains celery gluten crustaceans  fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan sunday" data-myorder="2016" data-date="20160115">
+						<img src="./img/main5.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix sides celery gluten crustaceans eggs  lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegetarian dinner" data-myorder="2016" data-date="20160115">
+						<img src="./img/side1.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix sides celery gluten crustaceans eggs fish lupin milk mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegetarian sunday" data-myorder="2016" data-date="20160115">
+						<img src="./img/side2.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix sides celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan lunch" data-myorder="2016" data-date="20160115">
+						<img src="./img/side3.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix sides celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/side4.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix sides celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegetarian dinner" data-myorder="2016" data-date="20160115">
+						<img src="./img/side5.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix salads celery crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegetarian sunday" data-myorder="2016" data-date="20160115">
+						<img src="./img/salad1.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix salads celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan lunch" data-myorder="2016" data-date="20160115">
+						<img src="./img/salad2.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix salads celery gluten  eggs fish lupin milk molluscs mustard peanuts sesame-seeds soya sulphur-dioxide vegan breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/salad3.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix salads celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya  vegetarian dinner" data-myorder="2016" data-date="20160115">
+						<img src="./img/salad4.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix salads celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts  soya sulphur-dioxide vegetarian sunday" data-myorder="2016" data-date="20160115">
+						<img src="./img/salad5.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix desserts celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds  sulphur-dioxide vegan lunch" data-myorder="2016" data-date="20160115">
+						<img src="./img/des1.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix desserts celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/des2.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix desserts celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya  vegetarian dinner" data-myorder="2016" data-date="20160115">
+						<img src="./img/des3.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix desserts celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegetarian sunday" data-myorder="2016" data-date="20160115">
+						<img src="./img/des4.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix desserts celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan lunch" data-myorder="2016" data-date="20160115">
+						<img src="./img/des5.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix drinks celery gluten crustaceans eggs fish lupin milk molluscs  nuts peanuts sesame-seeds soya sulphur-dioxide vegan breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/drink1.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix drinks celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/drink2.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix drinks celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya  vegan breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/drink3.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix drinks celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide vegan breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/drink4.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+					<div class="mix drinks  gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds  sulphur-dioxide vegan breakfast" data-myorder="2016" data-date="20160115">
+						<img src="./img/drink5.jpg">
+						<p class="newsHead">Dish Name</p>
+						<p class="abstract">Dish Description </p>
+					</div>
+				</div>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search</h4>
+					
+					<div class="cd-filter-content">
+						<input type="search" placeholder="Try starters...">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+
+				<!-- celery gluten crustaceans eggs fish lupin milk molluscs mustard nuts peanuts sesame-seeds soya sulphur-dioxide-->
+				<div class="cd-filter-block">
+					<h4>Allergens</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter=".celery" type="checkbox" id="checkbox1">
+							<label class="checkbox-label" for="checkbox1">Celery</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".gluten" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Cereals containing gluten</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".crustaceans" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Crustaceans</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".eggs" type="checkbox" id="checkbox4">
+							<label class="checkbox-label" for="checkbox4">Eggs</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".fish" type="checkbox" id="checkbox5">
+							<label class="checkbox-label" for="checkbox5">Fish</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".lupin" type="checkbox" id="checkbox6">
+							<label class="checkbox-label" for="checkbox6">Lupin</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".milk" type="checkbox" id="checkbox7">
+							<label class="checkbox-label" for="checkbox7">Milk</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".molluscs" type="checkbox" id="checkbox8">
+							<label class="checkbox-label" for="checkbox8">Molluscs</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".mustard" type="checkbox" id="checkbox9">
+							<label class="checkbox-label" for="checkbox9">Mustard</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".nuts" type="checkbox" id="checkbox10">
+							<label class="checkbox-label" for="checkbox10">Nuts</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".peanuts" type="checkbox" id="checkbox11">
+							<label class="checkbox-label" for="checkbox11">Peanuts</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".sesame-seeds" type="checkbox" id="checkbox12">
+							<label class="checkbox-label" for="checkbox12">Sesame seeds</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".soya" type="checkbox" id="checkbox13">
+							<label class="checkbox-label" for="checkbox13">Soya</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".sulphur-dioxide" type="checkbox" id="checkbox14">
+							<label class="checkbox-label" for="checkbox14">Sulphur dioxide</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Select a Menu</h4>
+					
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters">
+							<select class="filter" name="selectThis" id="selectThis">
+								<option value="">Choose an option</option>
+								<option value=".breakfast">Breakfast</option>
+								<option value=".lunch">Lunch</option>
+								<option value=".dinner">Dinner</option>
+								<option value=".sunday">Sunday</option>
+							</select>
+						</div> <!-- cd-select -->
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Suitable For</h4>
+
+					<ul class="cd-filter-content cd-filters list">
+						<li>
+							<input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+							<label class="radio-label" for="radio1">Everyone</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".vegetarian" type="radio" name="radioButton" id="vegetarian">
+							<label class="radio-label" for="vegetarian">Vegetarian</label>
+						</li>
+
+						<li>
+							<input class="filter" data-filter=".vegan" type="radio" name="radioButton" id="vegan">
+							<label class="radio-label" for="vegan">Vegan</label>
+						</li>
+					</ul> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</main> <!-- cd-main-content -->
+	<!-- <script src="js/jquery-2.1.1.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script> -->
+	<script src="js/filter.js"></script> 
+</body>
+</html>
